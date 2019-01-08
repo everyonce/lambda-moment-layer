@@ -1,0 +1,21 @@
+{
+  "name": "lambda-moment-layer",
+  "version": "1.0.0",
+  "description": "A lambda layer which adds moment.js to your function.",
+  "scripts": {
+    "build": "npm install && mkdir -p nodejs && cp -r node_modules nodejs/ && zip -r aws-lambda-layer.zip nodejs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bahlo/lambda-fetch-layer.git"
+  },
+  "author": "Arne Bahlo <hallo@arne.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahlo/lambda-fetch-layer/issues"
+  },
+  "homepage": "https://github.com/bahlo/lambda-fetch-layer#readme",
+  "dependencies": {
+    "moment": "^2.23.0"
+  }
+}
